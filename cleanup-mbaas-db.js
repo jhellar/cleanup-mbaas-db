@@ -52,7 +52,7 @@ fh.load(fhConfig, function(err) {
 
         MongoClient.connect(url, function(err, db) {
           if (err) {
-            winston.error('Error connecting to server'
+            winston.error('Error connecting to server');
             winston.error(err);
             db.close();
             return;
